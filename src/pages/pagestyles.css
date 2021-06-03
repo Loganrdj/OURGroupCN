@@ -1,0 +1,236 @@
+/* h1 {
+    color: #7BC366;
+} */
+@font-face {
+    font-family: "ITCKabelStd-Book";
+    src: url("../../fonts/ITCKabelStd-Book.otf") format("opentype");
+}
+@font-face {
+    font-family: "ITCKabelStd-Bold";
+    src: url("../../fonts/ITCKabelStd-Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: "ITCKabelStd-Demi";
+    src: url("../../fonts/ITCKabelStd-Demi.otf") format("opentype");
+}
+@font-face {
+    font-family: "ITCKabelStd-Ultra";
+    src: url("../../fonts/ITCKabelStd-Ultra.otf") format("opentype");
+}
+html { 
+    font-size: calc(1em + 1vw);
+}
+/* Remove scroll bar */
+body::-webkit-scrollbar { 
+    display: none;
+}
+.index-description-link {
+    text-decoration: none !important;
+    color: #7BC366;
+    border-bottom: 2px solid #7BC366;
+    font-weight: bold;
+}
+.index-description-link:hover {
+    color: #3a7429
+}
+#carousel-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#section-description {
+    margin-bottom: 0;
+    width: 600px;
+}
+#project-carousel-link {
+    text-decoration: none;
+    color: white;
+}
+
+.mobile-display {
+    display: none;
+}
+.about-box {
+    width: 50%;
+    height: 110vh;
+}
+#about-box-div-1 {
+    background-color: #e9eaed;
+    align-self: center;
+}
+#about-box-div-2 {
+    background-color: white;
+    color: #7BC366;
+    
+}
+#about-box-div-2 p {
+    color: black;
+    font-size: .7em
+}
+#about-box-div-3 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #7BC366;
+    color: white;
+}
+#about-box-div-4 {
+    background-color: gray;
+}
+#about-box-div-4 div{
+    width: 100%;
+    height: 100%;
+}
+#about-box-div-5 {
+    background-color: #e9eaed;
+}
+#about-box-div-6 {
+    height: 300px;
+}
+    
+.about-layer-div {
+    display: flex;
+    flex-flow: row wrap;
+    /* margin-left: 14%;
+    margin-right: 14%; */
+    
+}
+
+.logo-div {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+.about-layer-div #about-box-div-5 {
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'ITCKabelStd-Demi';
+}
+p {
+    font-family: 'ITCKabelStd-Book';
+}
+
+/* react-slick css */
+/* .slick-slide {
+    margin: 0 10px !important;
+}
+.slick-list {
+    margin: 0 -100px !important;
+} */
+
+#projects-background {
+    background-color: #7BC366
+}
+#projects-carousel-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: #7BC366;
+}
+#projects-section-description {
+    margin-bottom: 0;
+    width: 600px;
+    color: #7BC366;
+}
+#project-page-carousel-link {
+    color: #7BC366;
+}
+
+/* Projects Page */
+.grayscale-image {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+.grayscale-image:hover {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    transition: filter 1s;
+}
+.margin-up {
+    margin-top: -4.5rem;
+    z-index: 1000000;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 2.5rem;
+}
+.projects-row {
+    margin-bottom: 1rem;
+}
+.projects-row h6, .projects-row p{
+    font-size: .7rem;
+}
+.projects-row h6 {
+    margin-bottom: 0;
+    margin-top: .6rem;
+}
+
+/* Extra large TV screens */
+@media screen and (min-width: 1200px) { 
+    #index-title{
+        padding-top: 0%;
+    }
+}
+/* Desktops, large screens */
+@media screen and (max-width: 1200px) { 
+    #index-title{
+        padding-top: 0%;
+        width: 52%;
+    }
+}
+/* Small screens, laptops */
+@media screen and (max-width: 1024px) { 
+    #index-title{
+        padding-top: 4%;
+        width: 65%;
+    }
+}
+/* iPads & Tablets */
+@media screen and (max-width: 768px) { 
+    #index-title{
+        padding-top: 4%;
+        width: 80%;
+    }
+}
+/* Mobile + */
+@media only screen and (max-width: 600px) {
+    .about-box {
+        width: 100%;
+    }
+    #about-box-div-1, #about-box-div-4 {
+        display: none;
+    }
+    #logo-div {
+        width: 50vh;
+    }
+    #index-title {
+      width: 100%;
+    }
+    #index-description {
+      font-size: 15px;
+      width: 100%;
+    }
+    .non-display {
+        display: none !important;
+    }
+    .mobile-display {
+        display: block;
+    }
+  }
+/* Mobile */
+@media screen and (max-width: 480px) { 
+    #index-title{
+        padding-top: 4%;
+    }
+    .non-display {
+        display: none !important;
+    }
+    .mobile-display {
+        display: block;
+    }
+    #section-description, #projects-section-description {
+        /* width: 70% !important; */
+        font-size: 24px;
+    }
+}

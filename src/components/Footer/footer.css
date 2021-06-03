@@ -1,0 +1,27 @@
+.footer-link{
+    color: black !important;
+    font-weight: bold;
+    /* text-decoration: none; */
+}
+#footer-links {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    text-decoration: none;
+    justify-content: baseline;
+    font-size: 50%;
+}
+#footer-logo {
+    width: 25%;
+    justify-content: baseline;
+}
+#contact-div {
+    width: 25%;
+    font-size: 50%;
+}
+#address-div {
+    width: 25%;
+    margin-right: 5%;
+    font-size: 50%;
+}
+

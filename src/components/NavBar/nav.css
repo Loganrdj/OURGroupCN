@@ -1,0 +1,133 @@
+.navbar{
+    padding-top: 50px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+
+    /* styling */
+    background-color: #7BC366;
+    color: white;
+    text-decoration: none !important;
+    height: 450px;
+    font-family: 'ITCKabelStd-Demi';
+}
+.navbar-background-image {
+
+    background-image: url(../../images/Project-4-Shandong-Outlet-Mall/display.jpg);
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+    background-position: center;
+    color: white !important;
+    /* background-color: #7bc366 !important; */
+}
+.navbar-background-image-projects {
+
+    background-image: url(../../images/Project-5-Suzhou-Riverbank/display.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: white !important;
+    /* background-color: #7bc366 !important; */
+}
+.green-box {
+    /* background-color: #7BC366; */
+    background-color: rgba(124,196,99, 0.7);
+}
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%; /* Changes the length of the NavBar Links*/
+    /* background: rgb(124,196,99, .6); */
+}
+.nav-link{
+    display: flex;
+    /* align-self: center; */
+    width: 10%;
+    order: 0;
+    justify-content: space-around;
+    align-content:space-around;
+    font-size: 20px;
+    /* styling */
+    color: white;
+    /* transition: border-bottom 2s; */
+    text-decoration: none !important;
+}
+.nav-link:hover {
+    color: white;
+    border-bottom: 2px solid white;
+}
+#nav-button-div {
+    align-self: flex-end;
+}
+#nav-btn-true {
+    font-size: 100%;
+    font-family: inherit;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    color: white;
+}
+#nav-btn {
+    order: 2;
+    align-self: flex-end;
+    display: none;
+    /* styling */
+    border: white 2px !important;
+}
+#title {
+    order: 0;
+}
+
+/* Extra large TV screens */
+@media screen and (min-width: 1200px) { 
+    
+}
+/* Desktops, large screens */
+@media screen and (max-width: 1200px) { 
+    #nav-btn {
+        display: none;
+    }
+    .nav-link {
+        font-size: 15px;
+    }
+}
+/* Small screens, laptops */
+@media screen and (max-width: 1024px) { 
+    #nav-btn {
+        display: none;
+    }
+    .nav-link {
+        font-size: 13px;
+    }
+}
+
+/* iPads & Tablets */
+@media screen and (max-width: 768px) { 
+    .navbar {
+        justify-content: flex-start;
+    }
+    .nav-links{
+        flex-direction: column;
+    }
+    #nav-btn {
+        display: block;
+        align-self: center;
+        font-size: 30px;
+    }
+    .nav-link{
+        display: none;
+    }
+    #title {
+        order: -10;
+    }
+}
+/* Mobile */
+@media screen and (max-width: 480px) { 
+    #nav-btn {
+        display: block;
+        align-self: center;
+        font-size: 30px;
+    }
+}
